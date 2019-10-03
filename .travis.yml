@@ -14,9 +14,9 @@ env:
 
 language: ruby
 gemfile:
-  - gemfiles/spree_3_2.gemfile
   - gemfiles/spree_3_5.gemfile
   - gemfiles/spree_3_6.gemfile
+  - gemfiles/spree_4_0.gemfile
   - gemfiles/spree_master.gemfile
 
 script:
@@ -24,9 +24,9 @@ script:
   - bundle exec rake spec
 
 rvm:
-  - 2.5.1
+  - 2.3.8
   - 2.4.4
-  - 2.3.7
+  - 2.5.1
 
 matrix:
     allow_failures:
